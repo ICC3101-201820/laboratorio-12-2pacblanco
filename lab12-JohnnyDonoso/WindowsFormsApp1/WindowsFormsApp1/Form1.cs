@@ -13,9 +13,11 @@ using Modelo1;
 namespace WindowsFormsApp1
 {
     public delegate void AgregarComidaDelegate(string nombre, int proteina, int carbohidrato, int grasa);
+   
     public partial class Form1 : Form
     {
         public event AgregarComidaDelegate OnAgregarComida;
+   
         public Form1()
         {
             InitializeComponent();
@@ -46,9 +48,10 @@ namespace WindowsFormsApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string a_borrar = listBox1.Text;
-            listBox1.Items.Remove(a_borrar);
+            listBox1.Items.Remove(listBox1.Text);
         }
+
+        
 
        
     }

@@ -21,6 +21,6 @@ namespace WindowsFormsApp1
             Comida comida = new Comida(nombre, carbohidrato, proteina, grasa);
             lista.Agregar(comida);
             form1.AgregarComida(comida);
-        }
+        }   
     }
 }

@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
+
+
 namespace Modelo1
 {
+    
     public class ListaComida
     {
         public List<Comida> comidita;
@@ -21,5 +24,7 @@ namespace Modelo1
         {
             comidita.Remove(comida);
         }
+
+        
     }
 }
